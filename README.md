@@ -9,7 +9,7 @@ inspired by the phpstan baseline https://phpstan.org/user-guide/baseline
 ## installation
 ```npm install eslint-baseline```
 ## usage
-The command is a simple wrapper around eslint so it will use all your existing config files and clommand line options as eslint
+The command is a simple wrapper around eslint so it will use all your existing config files and command line options as eslint
 
 ```npx eslint-baseline file1.js ```
 
