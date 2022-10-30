@@ -1,6 +1,6 @@
 {
-  "name": "eslint-baseline",
-  "version": "1.0.2",
+  "name": "@luminateone/eslint-baseline",
+  "version": "1.0.3",
   "description": "create a baseline for eslint pipelines",
   "main": "index.js",
   "type": "module",
