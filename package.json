@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "eslint": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuminateOne/eslint-baseline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LuminateOne/eslint-baseline/issues"
+  },
+  "homepage": "https://github.com/LuminateOne/eslint-baseline#readme"
 }
