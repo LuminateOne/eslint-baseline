@@ -29,7 +29,7 @@ async function execute(args = []) {
     json.forEach((file) => {
 
         file.messages.forEach((message) => {
-            if (message.severity >= 2) {
+            if (message.severity >= 1) {
 
                 let filePath = path.relative(process.cwd(), file.filePath);
 
