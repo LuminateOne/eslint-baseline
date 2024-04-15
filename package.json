@@ -1,7 +1,8 @@
 {
   "name": "@luminateone/eslint-baseline",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "create a baseline for eslint pipelines",
+  "keywords": [ "eslint", "baseline", "base-line" ],
   "main": "index.js",
   "type": "module",
   "bin": {
