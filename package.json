@@ -2,7 +2,7 @@
   "name": "@luminateone/eslint-baseline",
   "version": "1.0.8",
   "description": "create a baseline for eslint pipelines",
-  "keywords": [ "eslint", "baseline", "base-line" ],
+  "keywords": [ "eslint", "baseline", "base-line", "ci", "code", "continuous integration", "linter", "quality"],
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -27,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/LuminateOne/eslint-baseline/issues"
   },
-  "homepage": "https://github.com/LuminateOne/eslint-baseline#readme"
+  "homepage": "https://github.com/LuminateOne/eslint-baseline#readme",
+  "contributors": [
+    {
+      "name": "Luminate One",
+      "email": "hello@luminate.one",
+      "url": "https://www.luminateone.co.nz/"
+    }
+  ]
 }
