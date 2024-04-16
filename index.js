@@ -26,7 +26,7 @@ async function exec(){
     // run eslint 
     let result = await eslint.execute();
 
-    if(result === null){
+    if(result === null) {
         console.error('eslint failed to run, baseline aborting...');
         process.exit(1);
     }
