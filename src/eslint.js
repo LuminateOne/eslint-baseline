@@ -19,7 +19,14 @@ async function execute(args = []) {
         let result = await execa('npx', args, { env: { ...process.env } });
         stdout = result.stdout;
     } catch (error) {
-        // eslint throws an error on fail...
+
+        // eslint throws an error on lint fail...
+
+        if(error.exitCode !== 1) {
+            console.error(error.stderr);
+            return null;
+        }
+
         stdout = error.stdout;
     }
 
