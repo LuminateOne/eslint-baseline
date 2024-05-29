@@ -29,13 +29,17 @@ async function exec() {
 
     // compose eslint result with baseline
     let fails = [];
-    for (const [filePath, errors] in Object.values(result)) {
+    for (const [filePath, errors] in Object.entries(result)) {
         if (baseline[filePath] === undefined) {
             // new file not in the baseline
-            fails.push(...Object.values(errors));
+            for (let error of Object.values(errors)) {
+                for (let messages of error) {
+                    fails.push(...messages);
+                }
+            }
             continue;
         }
-        for (const [ruleId, messages] in Object.values(errors)) {
+        for (const [ruleId, messages] in Object.entries(errors)) {
             if (baseline[filePath][ruleId] === undefined) {
                 // new rule not in the baseline
                 fails.push(...messages);
