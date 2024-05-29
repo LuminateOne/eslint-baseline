@@ -6,8 +6,11 @@ Ever inherited project that never had any linting?  Potentially hundreds/thousan
 
 inspired by the phpstan baseline https://phpstan.org/user-guide/baseline
 
+## Why this over original `@luminateone/eslint-baseline`?
+Unlike the original `@luminateone/eslint-baseline` package, the baseline does not depend on the line number but on the context of the error. Changes in the file rarely affect the baseline.
+
 ## installation
-```npm install @luminateone/eslint-baseline```
+```npm install @chobotx/eslint-baseline```
 ## usage
 The command is a simple wrapper around eslint so it will use all your existing config files and command line options as eslint
 

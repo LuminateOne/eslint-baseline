@@ -1,6 +1,6 @@
 {
-  "name": "@luminateone/eslint-baseline",
-  "version": "1.0.9",
+  "name": "@chobotx/eslint-baseline",
+  "version": "0.9",
   "description": "create a baseline for eslint pipelines",
   "keywords": [ "eslint", "baseline", "base-line", "ci", "code", "continuous integration", "linter", "quality"],
   "main": "index.js",
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "luminateone",
+  "author": "chobotx",
   "license": "MIT",
   "dependencies": {
     "execa": "^6.1.0",
@@ -22,17 +22,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuminateOne/eslint-baseline.git"
+    "url": "git+https://github.com/ChobotX/eslint-baseline.git"
   },
   "bugs": {
-    "url": "https://github.com/LuminateOne/eslint-baseline/issues"
+    "url": "https://github.com/ChobotX/eslint-baseline/issues"
   },
-  "homepage": "https://github.com/LuminateOne/eslint-baseline#readme",
+  "homepage": "https://github.com/ChobotX/eslint-baseline#readme",
   "contributors": [
     {
       "name": "LuminateOne",
       "email": "hello@luminate.one",
       "url": "https://www.luminateone.co.nz/"
+    },
+    {
+      "name": "ChobotX",
+      "email": "ondrejchab@seznam.cz",
+      "url": "https://github.com/ChobotX"
     }
   ]
 }
