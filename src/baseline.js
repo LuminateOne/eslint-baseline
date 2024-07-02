@@ -10,7 +10,7 @@ import * as objectHash from "object-hash";
 const getFileLinesTrimmed = (filePath) => {
     const lines = {};
 
-    const file = fs.readFileSync(filePath);
+    const file = fs.readFileSync(filePath, 'utf8');
     const fileLines = file.split("\n");
     for (const [index, line] of fileLines.entries()) {
         lines[index + 1] = line.trimStart().trimEnd() + "\n";
