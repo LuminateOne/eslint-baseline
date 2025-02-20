@@ -39,15 +39,16 @@ async function execute(args = []) {
             if (message.severity >= 2) {
 
                 let filePath = path.relative(process.cwd(), file.filePath);
+                const sanitizedfilePath = filePath.replaceAll('\\', '/');
 
                 result.push({
-                    path: filePath,
+                    path: sanitizedfilePath,
                     line: message.line,
                     column: message.column,
                     ruleId: message.ruleId,
                     message: message.message,
                     hash: objectHash.sha1({
-                        filePath,
+                        filePath: sanitizedfilePath,
                         line: message.line,
                         column: message.column, // TODO: optional?
                         ruleId: message.ruleId
