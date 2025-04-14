@@ -39,7 +39,7 @@ async function execute(args = []) {
             if (message.severity >= 2) {
 
                 let filePath = path.relative(process.cwd(), file.filePath);
-                const sanitizedfilePath = filePath.replaceAll('\\', '/');
+                const sanitizedfilePath = filePath.replace('/\\/g', '/');
 
                 result.push({
                     path: sanitizedfilePath,
